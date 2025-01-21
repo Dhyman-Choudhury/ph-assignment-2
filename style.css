@@ -162,6 +162,19 @@
     margin-bottom: 60px;
 }
 
+marquee{
+    width:100%;
+     direction:left;
+      behavior:scroll; 
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+        border: 1px solid rgba(0, 0, 0, .15);
+        background-color: #1783c1;
+        padding: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 1.5rem;
+}
+
 /*  Stories section styles */
 .our_stories{
     background-image:url('assets/bg.png'), linear-gradient(to bottom,#FFFFFF 30%,rgba(254, 163, 1, 0.3)) ;
