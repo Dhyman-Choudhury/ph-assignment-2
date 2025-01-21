@@ -162,7 +162,7 @@
     margin-bottom: 60px;
 }
 
-marquee{
+.marquee{
     width:100%;
      direction:left;
       behavior:scroll; 
