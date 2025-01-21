@@ -19,6 +19,30 @@
     padding: 10px 40px;
     /* text-align: center; */
 }
+#btn_secondary{
+    border: none;
+    border-radius:48px ;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 19px;
+    color: #FFFFFF;
+    position: relative;
+    left: -10px;
+    top: -30px;
+}
+   #btn_1{
+    border: none;
+    border-radius:48px ;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 19px;
+    color: #FFFFFF;
+    position: relative;
+    left: -150px;
+    top: -30px;
+
+    /* text-align: center; */
+}
 
 /* navbar styles */
 .navbar{
@@ -82,7 +106,7 @@
     text-align: center;
 
 }
-.cards_section_1 h1{
+.cards_section_1 h2{
     font-weight: 700;
     font-size: 2.875rem;
     color: #000000;
@@ -101,6 +125,15 @@
     box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
     border-radius: 18px;
     text-align: center;
+}
+ #card_1{
+    background-image: linear-gradient(to bottom,#DEF5FF 0%, rgba(255, 255, 255, 0) 40%);
+}
+#card_2{
+    background: linear-gradient(to bottom,#FFF4DC 0%, rgba(255, 255, 255, 0) 40%);
+}
+#card_3{
+    background: linear-gradient(to bottom, #EEE1FF 0%,rgba(249, 244, 255, 0.36) 26%, rgba(255, 255, 255, 0) 40%);
 }
 .card img{
     margin-top: 52px;
@@ -128,9 +161,65 @@
     margin-bottom: 60px;
 }
 
+/*  Stories section styles */
+.our_stories{
+    background-image:url('assets/bg.png'), linear-gradient(to bottom,#FFFFFF 30%,rgba(254, 163, 1, 0.3)) ;
+    padding: 60px 0px;
+    text-align: center;
+}
+.our_stories h3{
+    font-weight: 700;
+    font-size: 2.875rem;
+    color: #000000;
+}
+.stories_container{
+    max-width: 1160px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+}
+#box_1{
+    grid-row: span 2;
+    max-width: 540px;
+    max-height: 630px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+}
+.story_1 h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+.story_1 p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+}
+
+.story{
+max-width: 290px;
+min-height: 300px;
+border-radius: 16px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background-color: #FFFFFF;
+}
+.story, .story_1, img{
+    /* object-fit: cover; */
+    /* border-radius: 16px; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
 
 /* small device responsive section */
 @media screen and (max-width:576px){
+    /* html,body{
+        width: 100%;
+    } */
     .navbar{
         display: none;
     }
@@ -145,23 +234,52 @@
     .banner{
         flex-direction: column-reverse;
          margin: 20px;
+         width: 100%;
     }
     .banner_content{
         max-width: 640px;
         margin: 20px;
         text-align: center;
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
     }
     .cards_container{
         flex-direction: column;
         gap: 20px;
         margin: 20px;
         align-items: center;
+        width: 100%;
     }
     .angle_bracket{
         display: none;
     }
-
+    .our_stories{
+        width: 100%;
+       padding: 20px 10px;
+    }
+     .hidden{
+        display: none;
+    }
     
+    .stories_container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0px;
+        gap: 10px;
 
+    }
+    .story{
+        width: 100%;
+        
+    }
+    .story img{
+        width: 100%;
+    }
+    #btn_secondary{
+        width: 75%;
+        padding: auto;
+    }
     
 }
