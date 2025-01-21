@@ -15,10 +15,8 @@
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.25rem;
-    /* background-color: orange; */
     color: #FFFFFF;
     padding: 10px 40px;
-    /* text-align: center; */
 }
 #btn_secondary{
     border: none;
@@ -41,8 +39,6 @@
     position: relative;
     left: -150px;
     top: -30px;
-
-    /* text-align: center; */
 }
 
 /* navbar styles */
@@ -105,7 +101,6 @@
 .cards_section_1{
     background-image: url('assets/bg.png');
     text-align: center;
-
 }
 .cards_section_1 h2{
     font-weight: 700;
@@ -191,8 +186,7 @@
     margin: 80px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-   
+    gap: 20px;  
 }
 #box_1{
     grid-row: span 2;
@@ -222,8 +216,6 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 background-color: #FFFFFF;
 }
 .story, .story_1, img{
-    /* object-fit: cover; */
-    /* border-radius: 16px; */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -256,9 +248,9 @@ background-color: #FFFFFF;
     max-width: 399px;
 }
 .footer_column_1 p{
-font-weight: 400;
-font-size: 1.25rem;
-color: #FFFFFF;
+   font-weight: 400;
+   font-size: 1.25rem;
+   color: #FFFFFF;
 }
 .footer_column_2 ul li {
     list-style: none;
@@ -275,9 +267,9 @@ color: #FFFFFF;
  }
 .footer_icon{
     display: flex;
-    gap: 10px;
-    
+    gap: 10px;    
 }
+
 /* small device responsive section */
 @media screen and (max-width:576px){
     html, body{
@@ -327,17 +319,14 @@ color: #FFFFFF;
      .hidden{
         display: none;
     }
-    
     .stories_container{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         margin: 20px 0px;
         gap: 10px;
-
     }
     .story{
-        width: 100%;
-        
+        width: 100%;   
     }
     .story img{
         width: 100%;
